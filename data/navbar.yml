@@ -1,13 +1,4 @@
 items:
   -
-    name: 'About'
-    route: '/'
-  - 
-    name: 'Blog'
-    route: '/blog'
-  -
-    name: 'Newsletter'
-    route: '/newsletter'
-  -
     name: 'Contact'
     route: '/contact' 

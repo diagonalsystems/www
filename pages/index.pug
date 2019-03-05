@@ -1,19 +1,11 @@
 extends /layouts/default.pug
 
+block head
+  section.hero.bg-black.white.h5.flex.items-center.justify-center.ph3
+    h2.lh-title.f3.f2-ns.mt0.fw1.tc
+      |Web Application Development 
+      br
+      |with a focus on Security
+
 block content
-  article
-    p
-      img.ba.bw05.w5#profile-picture(src="jonathandupre-profile.jpg")
-    
-    h2 Hi, I'm Jonathan!
-
-    p
-    |I’m a software developer from Canada 🇨🇦. 
-    br
-    |I currently work as a consultant through my company,  
-    a.link.blue(href="https://diagonal.sh" target="_new") Diagonal
-    |.
-
-    p 
-    |Web development is my primary focus, but I also really enjoy writing tools 
-    |for other developers. 
+  div.h-100

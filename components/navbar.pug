@@ -1,23 +1,23 @@
 input(type="checkbox" id="navbar-toggle")
 
-nav.flex.justify-center.pv2.bg-black-90.white
+nav#navbar.flex.justify-center.pv2.bg-black.white
 
   .container.flex.justify-between.ph2
     a.link.white.f5-l.f7.flex.items-center(href="/") 
-      | Jonathan Dupré
+      img#nav-logo(src="diagonal_wordmark.svg")
 
-    ul.menu.list.dn.flex-ns.items-center.ma0.tr.f5-l.f7
+    ul.menu.list.dn.flex-ns.items-center.ma0.tr.f6-l.f7
       each item in navbar.items
         li.pl3
           a.white.link(href=item.route active-class="light-blue") 
             | #{ item.name }
 
-    label#navbar-button.flex.justify-center.items-center.dn-ns.w1.h1.pa1.mh2.tc.bg-black90.br1.ba.bw05.b--white.white.pointer(
+    label#navbar-button.flex.justify-center.items-center.dn-ns.w1.h1.pa1.mh2.tc.bg-black.br1.ba.bw05.b--white.white.pointer(
       for="navbar-toggle"
       aria-label="Toggle mobile menu"
     )
 
-div.menu-mobile.list.flex.dn-ns.mt0.pl2.pv1.bg-black-90.white
+div.menu-mobile.list.flex.dn-ns.mt0.pl2.pv1.bg-black.white
  each item in navbar.items
   div.pl0.pv2.tc.db
     a.link.white(href=item.route active-class="light-blue") 

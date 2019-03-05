@@ -5,12 +5,19 @@ html, body
 body
   overflow-y: scroll
 
+body, p, small, a
+  font-family: 'Open Sans', -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif
+
 .container
   width: 100%
   max-width: 960px
+  padding: 0 1rem
   
 .t1
   font-size: 2vh
+
+.hero
+  min-height: 80vh
 
 article
   max-width: 72ex
@@ -27,8 +34,6 @@ pre
     padding-left: 1.5rem
     padding-right: 1.5rem
     width: 100%
-    
-#profile-picture
-  // width: 12rem
 
+@import 'style/_colors.styl'
 @import 'style/_navbar.styl'

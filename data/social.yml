@@ -1,10 +1,10 @@
 sites:
   -
     name: Twitter
-    url: https://twitter.com/Jonathan_Dupre
+    url: https://twitter.com/diagonalsystems
   -
     name: Github
-    url: https://github.com/kareniel
+    url: https://github.com/diagonalsystems
   -
     name: LinkedIn
-    url: https://www.linkedin.com/in/jonathandupre
+    url: https://www.linkedin.com/company/diagonal-systems
