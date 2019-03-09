@@ -66,6 +66,8 @@ function build () {
     var filenames = fs.readdirSync(contentDir)
     var filepaths = filenames.map(filename => path.join(contentDir, filename))
 
+    mkdirp.sync(contentDir)
+
     if (!data.routes[dirName]) {
       data.routes[dirName] = []
     }
