@@ -1,10 +1,13 @@
 sites:
   -
     name: Twitter
+    src: /twitter.svg
     url: https://twitter.com/diagonalsystems
   -
     name: Github
+    src: /github.svg
     url: https://github.com/diagonalsystems
   -
     name: LinkedIn
+    src: /linkedin.svg
     url: https://www.linkedin.com/company/diagonal-systems

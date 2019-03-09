@@ -3,12 +3,12 @@ input(type="checkbox" id="navbar-toggle")
 nav#navbar.flex.justify-center.pv2.bg-black.white
 
   .container.flex.justify-between.ph2
-    a.link.white.f5-l.f7.flex.items-center(href="/") 
-      img#nav-logo(src="diagonal_wordmark.svg")
+    a.white.flex.items-center(href="/") 
+      img#nav-logo(src="/diagonal_wordmark.svg")
 
-    ul.menu.list.dn.flex-ns.items-center.ma0.tr.f6-l.f7
+    ul.menu.list.dn.flex-ns.items-center.ma0.tr.f7-l.f7
       each item in navbar.items
-        li.pl3
+        li.pl4
           a.white.link(href=item.route active-class="light-blue") 
             | #{ item.name }
 

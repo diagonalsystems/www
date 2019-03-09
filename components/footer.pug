@@ -1,9 +1,55 @@
-footer.bg-black.white.flex.justify-center.mt5.pv3.pv4-ns
-  .container.tc
-    .mb3
-      each site in social.sites
-        span.mh2
-          small.f7 
-            a.link.white.underline(href=site.url target="_new") #{ site.name }
-    small.f7.db.tc.flex.flex-row.justify-center
-      | © 2018-2019 Diagonal Systems Inc.
+footer.bg-black.white.flex.justify-center.pv3.pv4-ns
+  .container.tc.flex.flex-column
+    .flex.flex-row-ns.flex-column-m.flex-column
+      .mr3
+        a.link.white.flex.items-center(href="/") 
+          img.h2(src="/diagonal_wordmark.svg")
+        .w5.tl.mv4
+          each site in social.sites
+            span.mh2
+              small.f7 
+                a.link.white.underline(href=site.url target="_new") 
+                  img.w1.h1(src=site.src alt=site.name)
+      .flex.flex-row-ns.flex-column.tl.f7.w-100
+        .w5-ns.ph2
+          h6.f7.fw7.mt2.mb3.mr2 Services
+          ul.list.pl0.lh-list
+            li
+              a.link(href="/services/appsec-consulting") 
+                |Application Security Consulting
+            li
+              a.link(href="/services/cloud-infrastructure-security")
+                |Cloud Infrastructure Security
+            li
+              a.link(href="/services/custom-tool-development") 
+                |Custom Tool Development
+            li
+              a.link(href="/services/pentesting")
+                |Penetration Testing
+        .w4-ns.ph2.mr2
+          h6.f7.fw7.mt2.mb3 Resources
+          ul.list.pl0.lh-list
+            li
+              a.link(href="/blog")
+                |Engineering Blog
+            li
+              a.link(href="/resources/newsletter")
+                |Weekly Digest
+            li
+              a.link(href="/resources/whitepapers")
+                |Whitepapers
+        .w4-ns.ph2.mr2
+          h6.f7.fw7.mt2.mb3 Company
+          ul.list.pl0.lh-list
+            li
+              a.link(href="/company/about")
+                |About
+            li
+              a.link(href="/company/careers")
+                |Careers
+            li
+              a.link(href="/company/contact")
+                |Contact 
+    .mt5
+      small.f7.db.tl
+        |© 2018-2019 Diagonal Systems Inc. All Rights Reserved.

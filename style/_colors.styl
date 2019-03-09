@@ -1,15 +1,27 @@
 $black=#131313
 $blue=#2EB3EB
-
+$red=#f00
 
 .bg-black
   background-color: $black
-  
+  a, a:active, a:visited, a:hover
+    &.link
+      color: white
+      transition: none
+
 .bg-blue
   background-color: $blue
   
 .black
   color: $black
-  
+
 .blue
   color: $blue
+  
+object.white svg
+  color: white
+  background-color: white
+  
+::selection
+  background-color: $blue
+  color: white

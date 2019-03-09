@@ -1,11 +1,26 @@
 extends /layouts/default.pug
 
 block head
-  section.hero.bg-black.white.h5.flex.items-center.justify-center.ph3
-    h2.lh-title.f3.f2-ns.mt0.fw1.tc
-      |Web Application Development 
-      br
-      |with a focus on Security
+  section.hero.bg-black.white.h5.flex.items-center.justify-center.ph3.flex-column
+    .container.tc.items-center(style="max-width: 70ex;")
+      h2.lh-title.f3.f2-ns.mt0.fw2
+        |Your Application Security Task Force 
+        br
+      h4.f5.f4-ns.fw1.lh-copy
+        |Operating in the public cloud has unlocked tremendous capabilities for innovation and agility. We take care of 
+        strong securing 
+        | this environment and 
+        strong protecting 
+        | your clients, employees, and intellectual property.
 
+  section.bg-white.black.flex.justify-center.ph3.pv4
+
+    .flex.flex-column.items-center
+      
+      ul.list.pl0.mv4-ns.flex.items-center.justify-center.flex-wrap
+        each logo in logos
+          li.w4-ns.w-100.ph1-ns.ma3.items-center.justify-center.flex
+            a(href=logo.url target="_new")
+              img.w4(src=logo.src)
 block content
   div.h-100

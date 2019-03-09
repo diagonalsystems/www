@@ -1,4 +1,10 @@
 items:
   -
-    name: 'Contact'
-    route: '/contact' 
+    name: 'Services'
+    route: '/services' 
+  -
+    name: 'Resources'
+    route: '/resources' 
+  -
+    name: 'Company'
+    route: '/company' 
