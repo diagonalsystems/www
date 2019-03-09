@@ -63,10 +63,12 @@ function build () {
     var dirName = path.dirname(route).split('/').slice(-1)[0]
     var paramName = path.basename(route, '.pug').split('').slice(1).join('')
     var contentDir = path.join(__dirname, '..', 'content', dirName)
+    
+    mkdirp.sync(contentDir)
+
     var filenames = fs.readdirSync(contentDir)
     var filepaths = filenames.map(filename => path.join(contentDir, filename))
 
-    mkdirp.sync(contentDir)
 
     if (!data.routes[dirName]) {
       data.routes[dirName] = []
