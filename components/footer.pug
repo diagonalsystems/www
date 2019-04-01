@@ -2,8 +2,8 @@ footer.bg-black.white.flex.justify-center.pv3.pv4-ns
   .container.tc.flex.flex-column
     .flex.flex-row-ns.flex-column-m.flex-column
       .mr3
-        a.link.white.flex.items-center(href="/") 
-          img.h2(src="/diagonal_wordmark.svg")
+        a.link.white.flex.items-center(href="/" itemscope itemtype="https://schema.org/Organization") 
+          img.h2(itemprop="logo" src="/diagonal_wordmark.svg")
         .w5.tl.mv4
           each site in social.sites
             span.mh2
