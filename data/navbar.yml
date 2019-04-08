@@ -1,10 +1,43 @@
 items:
   -
     name: 'Services'
-    route: '/services' 
+    route: '/services'
+    subitems:
+      - 
+        name: 'Application Security Consulting'
+        route: '/consulting'
+      - 
+        name: 'Adversarial Assessments'
+        route: '/assessments'
+      - 
+        name: 'Custom Tool Development'
+        route: '/development'
   -
     name: 'Resources'
     route: '/resources' 
+    subitems:
+      - 
+        name: 'Blog'
+        route: '/blog'
+      - 
+        name: 'Newsletter'
+        route: '/newsletter'
+      - 
+        name: 'Industry News'
+        route: '/industry'
+      - 
+        name: 'Whitepapers'
+        route: '/whitepapers'
   -
     name: 'Company'
     route: '/company' 
+    subitems:
+      - 
+        name: 'About'
+        route: '/about'
+      - 
+        name: 'Careers'
+        route: '/careers'
+      - 
+        name: 'Contact'
+        route: '/contact'

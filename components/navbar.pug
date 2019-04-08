@@ -1,6 +1,6 @@
 input(type="checkbox" id="navbar-toggle")
 
-nav#navbar.flex.justify-center.pv2.bg-black.white
+nav#navbar.flex.justify-center.pv2.bg-black.white(role="navigation")
 
   .container.flex.justify-between.ph2
     a.white.flex.items-center(href="/") 
@@ -8,9 +8,14 @@ nav#navbar.flex.justify-center.pv2.bg-black.white
 
     ul.menu.list.dn.flex-ns.items-center.ma0.tr.f7-l.f7
       each item in navbar.items
-        li.pl4
-          a.white.link(href=item.route active-class="light-blue") 
+        li.pl4.tr.item
+          a.white.link(href=item.route active-class="light-blue" aria-haspopup=item.subitems)
             | #{ item.name }
+          ul.dropdown(aria-label="submenu")
+            each subitem in item.subitems
+              a.link(href=item.route + subitem.route)
+                li.tl
+                  |#{ subitem.name }
 
     label#navbar-button.flex.justify-center.items-center.dn-ns.w1.h1.pa1.mh2.tc.bg-black.br1.ba.bw05.b--white.white.pointer(
       for="navbar-toggle"

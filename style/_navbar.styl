@@ -7,6 +7,7 @@ input#navbar-toggle
 #nav-logo
   height: 1.5rem
 
+
 @media only screen and (max-width: 30rem)
   input#navbar-toggle ~ .menu-mobile
     display: none
@@ -24,4 +25,89 @@ input#navbar-toggle
 
   #navbar-toggle:checked ~ nav #navbar-button:after
     content: '✕'
+
+
+
+// SUBMENU
+
+#navbar
+    
+  ul 
+    list-style: none
+    margin: 0
+    padding-left: 0
+
+  li 
+    color: #fff
+    display: block
+    float: left
+    padding: 1rem
+    position: relative
+    text-decoration: none
+  
+  li a 
+    color: #fff
+
+  li.item:hover,
+  li.item:focus-within 
+    cursor: pointer
+    &:before
+      content: "\a0";
+      border-bottom: 5px solid $black;
+      display: block
+      position: absolute
+      width: 100%
+      top: 0
+      left: 0
+      height: 100%
+      pointer-events: none
+      z-index: 100
+
+  ul li ul li:hover,
+  ul li ul li:focus-within 
+    cursor: pointer;
+    color: #fff
+    background-color: $black
+    a 
+      color: $red
+
+
+  li:focus-within a
+    outline: none;
+
+  ul li ul
+    background-color: #fff
+    visibility: hidden
+    opacity: 0
+    width: 100%
+    min-width: 13rem
+    padding-top: 0.25rem
+    position: absolute
+    margin-top: 1rem
+    right: 0
+    display: none
+    white-space: nowrap;
+    z-index: 10
+    color: $black
+    a
+      color: $black
+    *
+      display: inline
+
+  ul li:hover > ul,
+  ul li:focus-within > ul,
+  ul li ul:hover,
+  ul li ul:focus
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    width: 100%
+
+  ul li ul li 
+    clear: both;
+    width: 100%;
+    color: $black
+
+  ul li ul li
+    display: inline-block
 

@@ -1,7 +1,7 @@
 extends /layouts/default.pug
 
 block content
-  h2 Blog
+  h2.fw2.f2-ns Blog
   div
     ul.list.pl0
       - routes.blog.sort((a,b) => new Date(b.date) - new Date(a.date))
