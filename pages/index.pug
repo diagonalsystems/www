@@ -13,14 +13,19 @@ block head
         strong protecting 
         | your clients, employees, and intellectual property.
 
-  section.bg-white.black.flex.justify-center.ph3.pv4
+  section.bg-white.black.flex.flex-column.items-center.tc
 
-    .flex.flex-column.items-center
-      
-      ul.list.pl0.mv4-ns.flex.items-center.justify-center.flex-wrap
-        each logo in logos
-          li.w4-ns.w-100.ph1-ns.ma3.items-center.justify-center.flex
-            a(href=logo.url target="_new")
-              img.w4(src=logo.src)
+    h3.mt5.f2-ns.f3.fw2.mb0
+      | Our clients &amp; partners
+
+    .flex.justify-center.ph3.pv4
+
+      .flex.flex-column.items-center
+        
+        ul.list.pl0.mv4-ns.flex.items-center.justify-center.flex-wrap
+          each logo in logos
+            li.w4-ns.w-100.ph1-ns.ma3.items-center.justify-center.flex
+              a(href=logo.url target="_new")
+                img.w4(src=logo.src)
 block content
   div.h-100
