@@ -1,3 +1,7 @@
+@import 'style/vendor/tachyons.4.11.2.styl'
+@import 'style/vendor/debug.grid.css'
+@import 'style/_colors.styl'
+
 html, body
   font-size: 20px
   min-height: 100vh
@@ -9,12 +13,16 @@ body, p, small, a, li
   font-family: 'Open Sans', -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif
 
 main
+  min-height: 80vh !important
+  
+.min-vh-80
   min-height: 80vh
 
 .container
   width: 100%
   max-width: 960px
   padding: 0 1rem
+  flex: 1 1 auto
   
 .t1
   font-size: 2vh
@@ -27,6 +35,11 @@ main
 
 article
   max-width: 72ex
+  
+section
+  width: 100%
+  display: flex
+  justify-content: center
 
 pre
   code
@@ -41,6 +54,9 @@ pre
     padding-right: 1.5rem
     width: 100%
 
-@import 'style/_colors.styl'
+
 @import 'style/_navbar.styl'
 @import 'style/_typography.styl'
+@import 'style/_layout.styl'
+
+

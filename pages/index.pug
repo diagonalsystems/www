@@ -2,7 +2,7 @@ extends /layouts/default.pug
 
 block head
   section.hero.bg-black.white.h5.flex.items-center.justify-center.ph3.flex-column
-    .container.tc.items-center(style="max-width: 70ex;")
+    .container.tc.flex-column.flex.justify-center.items-center(style="max-width: 70ex;")
       h2.lh-title.f3.f2-ns.mt0.fw2
         |Your Application Security Task Force 
         br
@@ -11,25 +11,21 @@ block head
         | cloud-native applications by being
         | their adversaries.
 
-  section.bg-white.flex.flex-column.items-center.tc.pv5
+  section.bg-white.flex.flex-column.items-center.tc.pv5.ph2
 
-    .container.flex.justify-center.items-center
+    .container.flex.flex-column.justify-center.items-center.tl
 
-      blockquote.db.tl.f2.fw1.lh-title.mw9
-        span.bg-red.white.ph2 
+      blockquote
+        span
           |Set aside your peaceful ways,
           | and prepare for war.
-          br
-          | Melt down your plowshares, 
+          | Melt down your plowshares,
           | and take up your swords.
-          br
           | We will see the flesh laid low, 
           | the bodies fall.
-          br
-          | The Most High that none may know 
+          | The Most High that none may know
           | watches us all...
-        br
-        p.tr.f5 ― The Sword, "Hawks and Serpents"
+      cite ― The Sword, "Hawks and Serpents"
 
 
   section.bg-white.black.flex.flex-column.items-center.tc
@@ -46,6 +42,3 @@ block head
             li.w4-ns.w-100.ph1-ns.ma3.items-center.justify-center.flex
               a(href=logo.url target="_new")
                 img.w4(src=logo.src)
-
-block content
-  div.h-100

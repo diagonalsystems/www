@@ -1,13 +1,14 @@
 extends /layouts/default.pug
 
 block content
-  article.mb5
-    h2.fw2.f2-ns Subscribe to our newsletter
+  section
+    .container
+      h2 Subscribe to our newsletter
 
-    p.f6
-      |Every week we send out a list of 5 things I think are worth sharing — 
-      |interesting articles, new blog posts, and good ideas straight to your inbox.
+      p.f6
+        |Every week we send out a list of 5 things I think are worth sharing — 
+        |interesting articles, new blog posts, and good ideas straight to your inbox.
 
-    p.f6 It’s free. No spam. Unsubscribe whenever you want.
+      p.f6 It’s free. No spam. Unsubscribe whenever you want.
 
-    include /components/newsletter-form.pug
+      include /components/newsletter-form.pug

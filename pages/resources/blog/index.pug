@@ -1,15 +1,6 @@
 extends /layouts/default.pug
 
 block content
-  h2.fw2.f2-ns Blog
-  div
-    ul.list.pl0
-      - routes.blog.sort((a,b) => new Date(b.date) - new Date(a.date))
-      each post in routes.blog
-        li.lh-copy.mb3.mb0-ns
-          .dib.w4-ns.tr-ns #{ post.date }
-          .dib.w2
-          br.dn-ns
-          span.tl.dib
-            a.link(href='/blog/' + post.slug)
-              |#{ post.title }
+  section
+    .container
+      h2 Blog
