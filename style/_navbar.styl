@@ -71,10 +71,6 @@ input#navbar-toggle
     a 
       color: $red
 
-
-  li:focus-within a
-    outline: none;
-
   ul li ul
     background-color: #fff
     visibility: hidden
@@ -107,6 +103,9 @@ input#navbar-toggle
     clear: both;
     width: 100%;
     color: $black
+    &:focus
+      background-color: $black
+      color: white
 
   ul li ul li
     display: inline-block
