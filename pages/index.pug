@@ -1,7 +1,7 @@
 extends /layouts/default.pug
 
 block head
-  section.home-hero.hero.bg-black.white.h5.flex.items-center.justify-center.ph3.flex-column
+  section.min-vh-100.home-hero.hero.bg-black.white.flex.items-center.justify-center.ph3.flex-column
 
     .container.mt6.tc.flex-column.flex.justify-center.items-center
       h2.lh-title.f2.f1-ns.mt0.fw2
@@ -28,6 +28,13 @@ block head
           | watches us all.
       cite ― The Sword, "Hawks and Serpents"
 
+  section.flex.flex-column.items-center.tc.pv5.ph2.min-vh-50(style="background-image: url('bg2.png'); background-position-y: center;  background-position-x: center;  background-repeat-x: repeat;")
+
+    .container.flex.flex-column.justify-center.items-center.tl
+
+      blockquote
+        span
+      cite
 
   section.bg-white.black.flex.flex-column.items-center.tc
 
@@ -43,3 +50,9 @@ block head
             li.w4-ns.w-100.ph1-ns.ma3.items-center.justify-center.flex
               a(href=logo.url target="_new")
                 img.w4(src=logo.src)
+
+  section.bt.bb.bw05.b--gray.flex.flex-column.items-center.tc.pv5.min-vh-20
+
+    .container.flex.flex-column.justify-center.items-center.tl
+
+      include /components/newsletter-form.pug
