@@ -1,10 +1,12 @@
 extends /layouts/default.pug
 
 block content 
-  section
-    .container
+  section.bg-black.white.min-vh-50
+    .container.b5
       h2 Application Security Consulting
           
       blockquote
         span The profoundest truth of war is that the issue of battle is usually decided in the minds of the opposing commanders, not in the bodies of their men.
       cite ― B.H. Liddell Hart
+
+  include /components/contact-link-section.pug
