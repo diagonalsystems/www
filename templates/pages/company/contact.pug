@@ -1,0 +1,21 @@
+extends /templates/layouts/default.pug
+
+block content
+  section.min-vh-20.bg-black.white
+    .container
+      h2 Contact
+
+  section
+    .container.lh-copy
+      article.pv4
+        p
+          |We'd love to talk to you.
+        p
+          | You can reach us at 
+          a.bg-black.hover-bg-red.white.link(href="mailto:hello@diagonal.sh") 
+            | hello@diagonal.sh
+          |  or use the form below to send us a message.
+
+        br
+
+        include /templates/components/contact-form.pug

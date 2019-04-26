@@ -1,0 +1,40 @@
+extends /templates/layouts/default.pug
+
+block content
+  section.min-vh-25
+    .container
+      h2 Subscribe to our newsletter
+
+      p.f6
+        |Every week we send out a list of 5 things I think are worth sharing — 
+        |interesting articles, new blog posts, and good ideas straight to your inbox.
+
+      p.f6 It’s free. No spam. Unsubscribe whenever you want.
+
+      include /templates/components/newsletter-form.pug
+      
+  section.min-vh-50.pb5
+    .container
+      h2 History
+
+      table.t.w-100.mb5.lh-copy
+        tbody
+          tr.t-ro
+            td
+              a.black(href="#") 
+                |How Heartbleed turned vulnerabilities into brands
+            td 
+              i April 12, 2019
+          tr.t-ro
+            td 
+              a.black(href="#") 
+                |Get Docker right and get on with life
+            td 
+              i April 5, 2019
+          tr.t-ro
+            td 
+              a.black(href="#")
+                |Why smart engineers write bad code
+            td 
+              i March 28, 2019
+

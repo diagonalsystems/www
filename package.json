@@ -1,12 +1,13 @@
 {
-  "name": "@kareniel/www",
+  "name": "@diagonalsystems/www",
+  "private": true,
   "version": "2019.1.8",
-  "description": "My website.",
+  "description": "Diagonal's Website",
   "main": "src",
   "scripts": {
     "start": "npm run watch",
-    "watch": "node scripts/watch",
-    "build": "node scripts/build",
+    "watch": "node bin/watch",
+    "build": "node bin/build",
     "test": "standard --fix"
   },
   "repository": {
@@ -16,12 +17,12 @@
   "keywords": [
     "www"
   ],
-  "author": "Jonathan Dupré <hello@jonathandupre.com>",
+  "author": "Jonathan Dupré <jonathan@diagonal.sh>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kareniel/www/issues"
+    "url": "https://github.com/diagonalsystems/www/issues"
   },
-  "homepage": "https://github.com/kareniel/www#readme",
+  "homepage": "https://github.com/diagonalsystems/www#readme",
   "devDependencies": {
     "browserify": "^16.2.3",
     "budo": "^11.6.1",
