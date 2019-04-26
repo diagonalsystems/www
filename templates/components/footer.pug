@@ -3,7 +3,7 @@ section.bg-white.bt.bb.bw05.b--gray.flex.flex-column.items-center.tc.pv5.h3
 
   .container.flex.flex-column.justify-center.items-center.tl
 
-    include /components/newsletter-form.pug
+    include /templates/components/newsletter-form.pug
 
 footer.bg-black.white.flex.justify-center.pv3.pv4-ns
 
@@ -11,7 +11,7 @@ footer.bg-black.white.flex.justify-center.pv3.pv4-ns
     .flex.flex-row-ns.flex-column-m.flex-column
       .mr3
         a.link.white.flex.items-center(href="/" itemscope itemtype="https://schema.org/Organization") 
-          img.h2(itemprop="logo" src="/diagonal_wordmark.svg")
+          img.h2(itemprop="logo" src="/images/diagonal_wordmark.svg")
         .w5.tl.mv4
           each site in social.sites
             span.mh2

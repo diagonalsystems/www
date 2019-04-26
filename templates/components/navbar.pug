@@ -4,7 +4,7 @@ nav#navbar.absolute.w-100.flex.justify-center.pv2.white(role="navigation")
 
   .container.flex.justify-between.ph2
     a.white.flex.items-center(href="/") 
-      img#nav-logo(src="/diagonal_wordmark.svg")
+      img#nav-logo(src="/images/diagonal_wordmark.svg")
 
     ul.menu.list.dn.flex-ns.items-center.ma0.tr.f7-l.f7
       each item in navbar.items
@@ -13,7 +13,7 @@ nav#navbar.absolute.w-100.flex.justify-center.pv2.white(role="navigation")
             | #{ item.name }
           ul.dropdown(aria-label="submenu")
             each subitem in item.subitems
-              a.link(href=item.route + subitem.route)
+              a.link(href=subitem.absolute ? subitem.route : item.route + subitem.route)
                 li.tl
                   |#{ subitem.name }
 

@@ -13,7 +13,7 @@ var marked = require('marked')
 var stylus = require('stylus')
 
 const DIR = generateDirectoryMap([
-  'dist', 'pages', 'style', 'public'
+  'dist', 'templates/pages', 'style', 'public'
 ])
 
 const months = [
@@ -42,7 +42,7 @@ function build () {
   data.routes = {}
 
   var dynamicRoutes = []
-  var pages = listFilesRecursive(DIR.pages).filter(page => {
+  var pages = listFilesRecursive(DIR['templates/pages']).filter(page => {
     if (path.basename(page, '.pug')[0] === '_') {
       dynamicRoutes.push(page)
 
@@ -130,6 +130,11 @@ function build () {
 
 function getDestination (src) {
   var subdir = path.relative(DIR.root, path.dirname(src)).split(path.sep).slice(1).join(path.sep)
+
+  if (subdir.indexOf('pages') > -1) {
+    subdir = path.relative('pages', subdir)
+  }
+    console.log(subdir)
   var dir = path.join(DIR.dist, subdir)
   var ext = path.extname(src)
   var filename = path.basename(src, ext) + '.html'

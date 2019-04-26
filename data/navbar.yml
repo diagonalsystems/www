@@ -19,6 +19,7 @@ items:
       - 
         name: 'Blog'
         route: '/blog'
+        absolute: true
       - 
         name: 'Newsletter'
         route: '/newsletter'
