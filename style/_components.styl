@@ -1,13 +1,18 @@
 a
   color: $dark-blue
   transition: 0.3s
+  text-decoration: none
 a:visited
   color: $darker-blue
 a:hover:not(.white)
   background-color: $red
   color: $white
-  text-decoration: none
   transition: 0.3s
+  
+hr
+  @extends .mv5, .w4
+  border-color: #999
+  border-width: 0.5px
     
 .button
   @extends .input-reset, .ba, .b--black, .br0

@@ -1,12 +1,10 @@
 topics:
   blog:
     - unix philosophy
-    - open-source
-    - node.js
-    - web development
     - calm technology
-    - pixel art
-    - game design
+    - cloud operations
+    - security architecture
+    - open-source tools
   courses:
     - creative problem-solving
     - working with a development team
