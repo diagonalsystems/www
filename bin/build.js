@@ -53,7 +53,9 @@ function build () {
   })
 
   var opts = {
-    basedir: path.join(__dirname, '..')
+    basedir: path.join(__dirname, '..'),
+    filters: {},
+    globals: [ formatDate ]
   }
 
   dynamicRoutes.forEach(generateRoute)
@@ -124,7 +126,9 @@ function build () {
   function compilePug (filename, file, locals) {
     return pug.compile(file, Object.assign({}, opts, {
       filename
-    }))(Object.assign(locals, data))
+    }))(Object.assign(locals, data, {
+      formatDate
+    }))
   }
 }
 
