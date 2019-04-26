@@ -10,10 +10,10 @@ block content
         content
           | !{ post.content }
 
-        footer.mt4
+        footer.mt4.pt2.pb4
           p 
             small.i 
-              | Published #{ formatDate(post.data.date) }
+              |Published #{ formatDate(post.data.date) }
 
           ul.tags
             for tag in post.data.tags
