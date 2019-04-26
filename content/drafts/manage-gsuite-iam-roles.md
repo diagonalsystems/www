@@ -13,3 +13,4 @@ save api token in AWS Secrets Manager
 
 - https://github.com/cevoaustralia/aws-google-auth/tree/master/aws_google_auth
 - https://github.com/jcaxmacher/google-cloud-aws-role-helper
+- https://nvram.io/post/manage-aws-saml-roles/
