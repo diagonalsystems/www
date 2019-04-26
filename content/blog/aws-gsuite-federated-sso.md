@@ -19,14 +19,14 @@ This blog post will show you how you can set up federated SSO to your AWS resour
 
 ### What you will need
 
-This post assumes you already have administrative rights to both an AWS and a G Suite account. You will be calling the G Suite [Directory API][directory-api] which can be done through the web interface. If you want to automate this, you will need [API credentials][google-api-auth].
+This post assumes you already have administrative rights to both an AWS and a G Suite account. You will be calling the G Suite [Directory API][directory-api], which can be done through the web interface. If you want to automate this, you will need [API credentials][google-api-auth].
 
 Here is a quick overview of the steps we will be going through:
 
 1. Make AWS and G Suite aware of each other
 2. Create mappings between user profiles and AWS SAML attributes
 3. Create an AWS app in G Suite
-4. Create and assogm new IAM roles
+4. Create and assign new IAM roles
 
 
 ---
