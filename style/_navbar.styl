@@ -48,10 +48,14 @@ input#navbar-toggle
   
   li a 
     color: #fff
+  li a:hover
+    background-color: $black
 
   li.item:hover,
   li.item:focus-within 
     cursor: pointer
+    transition-duration: 0.3s, 0.3s, 0.3s
+    transition-property: background-color, color, opacity
     &:before
       content: "\a0";
       border-bottom: 5px solid $red;
@@ -63,12 +67,16 @@ input#navbar-toggle
       height: 100%
       pointer-events: none
       z-index: 100
+      transition-duration: 0.3s, 0.3s, 0.3s
+      transition-property: background-color, color, opacity
 
   ul li ul li:hover,
   ul li ul li:focus-within 
     cursor: pointer;
     color: #fff
-    background-color: $black
+    background-color: $red
+    transition-duration: 0.3s, 0.3s, 0.3s
+    transition-property: background-color, color, opacity
     a 
       color: $red
 
@@ -86,6 +94,8 @@ input#navbar-toggle
     white-space: nowrap;
     z-index: 10
     color: $black
+    transition-duration: 0.3s, 0.3s, 0.3s
+    transition-property: background-color, color, opacity
     a
       color: $black
     *
@@ -99,6 +109,8 @@ input#navbar-toggle
     opacity: 1;
     display: block;
     width: 100%
+    transition-duration: 0.3s, 0.3s, 0.3s
+    transition-property: background-color, color, opacity
 
   ul li ul li 
     clear: both;

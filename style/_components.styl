@@ -1,15 +1,22 @@
-a
-  color: $purple
+.red-underline
+  box-shadow: inset 0 -4px 0 $red
+  
+a 
+  color: $black
   transition-duration: 0.3s, 0.3s
   transition-property: background-color, color
   text-decoration: none
+  @extends .red-underline
 a:visited
-  color: $purple
-a:hover:not(.white)
+  color: $black
+a:hover
   background-color: $red
   color: $white
   transition-duration: 0.3s, 0.3s
   transition-property: background-color, color
+
+.bsn
+  box-shadow: none
 
 hr
   @extends .mv5, .w4
@@ -20,12 +27,12 @@ hr
   @extends .input-reset, .ba, .b--black, .br0
   @extends .bg-black, .white
   @extends .pv2, .ph3, .mv2
-  transition-duration: 0.3s, 0.3s
-  transition-property: background-color, color
+  transition-duration: 0.3s, 0.3s, 0.3s
+  transition-property: background-color, color, border-color
   &:hover
     @extends .pointer:hover, .hover-bg-red:hover
-    transition-duration: 0.3s, 0.3s
-    transition-property: background-color, color
+    transition-duration: 0.3s, 0.3s, 0.3s
+    transition-property: background-color, color, border-color
 
 ul.tags
   @extends .list, .pl0
@@ -34,6 +41,7 @@ ul.tags
     a
       @extends .pv1, .ph3, .pr2, .dib
       @extends .link, .bg-dark-gray, .white, .f7, .br1
+      @extends .bsn
       transition-duration: 0.3s, 0.3s
       transition-property: background-color, color
       &:hover
