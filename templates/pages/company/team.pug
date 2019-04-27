@@ -10,7 +10,9 @@ block content
 
   section.min-vh-50.pv3
     .container
+      - var lastIndex = Object.keys(team.people).slice(-1)[0]
       each category, index in team.people
+
         h3.mb4.mt4.f3.fw3 #{ index }
 
         each person, index in category
@@ -28,6 +30,6 @@ block content
 
                 a.mr4.mr3-l.w2.h2.w1-l.h1-l.dib(target="_new" href=`https://www.twitter.com/in/${p.twitter}`)
                   img(src="/images/social/twitter-black.svg")
+        if index !== lastIndex
           hr
-
 
