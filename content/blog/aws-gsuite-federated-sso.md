@@ -2,16 +2,17 @@
 title: How to Set Up Federated Single Sign-On to AWS Using G Suite
 date: 2019-04-26
 author: jonathan@diagonal.sh
+blurb: Not only does this removes the need for your users to remember yet another user name and password, it also streamlines identity management.
+category: DevSecOps
 tags:
   - AWS
   - SSO
   - GSuite
 ---
 
-If your team is already using G Suite as it's organization's directory, you might want to leverage it's SSO to authenticate 
-with your AWS management console and API. 
+If your team is already using G Suite as it's organization's directory, you might want to leverage it's SSO capabilities to authenticate with the AWS management console and API. 
 
-Users who have SSO access will see an additional app in their G Suite account. The icon authenticates you with and redirects you to the AWS Management Console with a given role.
+Users who have SSO access will see an additional app in their G Suite account. The icon authenticates with and redirects them to the AWS Management Console with a given role.
 
 Not only does this removes the need for your users to remember yet another user name and password, it also streamlines identity management.
 

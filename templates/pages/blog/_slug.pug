@@ -1,9 +1,11 @@
 extends /templates/layouts/default.pug
 
 block content
-  section
+  include /templates/pages/blog/header.pug
+
+  section.blog-post
     .container
-      article.lh-copy
+      article
         header
           h2 #{ post.data.title }
 

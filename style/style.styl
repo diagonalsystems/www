@@ -21,21 +21,19 @@ main
 
 .container
   width: 100%
-  max-width: 960px
+  max-width: 1024px//960px
   padding: 0 1rem
   flex: 1 1 auto
   
 .t1
   font-size: 2vh
 
-.hero
-  min-height: 80vh
-  padding-top: 1.5rem
   
 .lh-list
   line-height: 1.5rem
 
-article
+article.post
+  // header, content, footer, p, img, pre
   max-width: 72ex
   
 section
@@ -47,6 +45,8 @@ section
   background-image: url('images/bg.png')
   background-position-x: center
   background-repeat-x: repeat
+  min-height: 80vh
+  padding-top: 1.5rem
 
 @import 'style/_navbar.styl'
 @import 'style/_typography.styl'

@@ -1,19 +1,59 @@
 extends /templates/layouts/default.pug
-
+    
 block content
+  - 
+    routes.blog.sort((a,b) => new Date(b.date) - new Date(a.date))
+    var featured = routes.blog[0]
+
+  include /templates/pages/blog/header.pug
+
+  section.bg-black.white
+    .flex.w-100.pv2.bt.b--dark-gray.items-center.justify-center
+      .container.flex.flex-row
+        categories.ph3.flex.items-center.flex-auto.justify-start
+          ul.list.flex.f6.pl0
+            li.ph2 Show all
+            li.ph2
+              a.link.underline(href="#") DevSecOps
+        search.dn.items-center.ph3.justify-end
+          input.bg-light-gray.b--black.w5.ph3.pv1.f7(disabled type="text" placeholder="Search for articles")
+
+  section.pv4
+    .container
+      article.flex.flex-column.flex-row-l.w-100.ba.b--light-gray.bw1
+        .flex.w-50-l.bg-black.h5(
+          style=`background-image: url('/images/posts/${featured.slug}/cover.png');`
+        )
+        .flex.w-50-l.pa3.flex-column
+          content.flex-auto.lh-copy
+            h3.mt0.fw4
+              a(href=`/blog/${featured.slug}`) #{ featured.title }
+
+            p.f6 #{ featured.blurb }
+
+          footer.flex.flex-row
+            author.flex-auto
+              small #{ authors[featured.author].name }
+            date
+              small #{ featured.date }
+
   section
     .container
-      h2 Blog
+      ul.flex.flex-wrap.pl0.list.w-100.justify-between
+        each post in routes.blog.slice(1)
+          li.w-33
+            article.flex.flex-column.ba.b--light-gray.bw1.w-100.mb2
+              .flex.bg-blue.h4
+                img(src="#" alt="article image")
+              .flex.pa3.flex-column
+                content.flex-auto
+                  a(href="#")
+                    h3.mt0.fw4 #{ post.title }
+                  p.f6 #{ post.blurb }
 
-      h3 Index
+                footer.flex.flex-row
+                  author.flex-auto
+                    small #{ post.author }
+                  date
+                    small #{ post.date }
 
-      ul.list.pl0
-        - routes.blog.sort((a,b) => new Date(b.date) - new Date(a.date))
-        each post in routes.blog
-          li.black.lh-copy.mb3.mb0-ns
-            .dib.w4-ns.tr-ns #{ post.date }
-            .dib.w2
-            br.dn-ns
-            span.tl.dib
-              a(href='/blog/' + post.slug)
-                |#{ post.title }

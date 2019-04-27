@@ -87,7 +87,12 @@ function build () {
       var item = {
         slug: path.basename(filepath, path.extname(filepath)),
         title: data.title,
-        date: formatDate(data.date)
+        date: formatDate(data.date),
+        author: data.author,
+        category: data.category,
+        tags: data.tags,
+        blurb: data.blurb,
+        alt: data.alt
       }
 
       folder.push(item)
@@ -138,7 +143,7 @@ function getDestination (src) {
   if (subdir.indexOf('pages') > -1) {
     subdir = path.relative('pages', subdir)
   }
-    console.log(subdir)
+
   var dir = path.join(DIR.dist, subdir)
   var ext = path.extname(src)
   var filename = path.basename(src, ext) + '.html'
