@@ -1,0 +1,33 @@
+extends /templates/layouts/default.pug
+
+block content
+
+  section.hero.bg-black.white.flex-column
+    .db.h4.flex.items-center.justify-center
+      h2 
+        a(href="/company/team") 
+          span.white.fw2.sans-serif Team
+
+  section.min-vh-50.pv3
+    .container
+      each category, index in team.people
+        h3.mb4.mt4.f3.fw3 #{ index }
+
+        each person, index in category
+          - p = people[person + '@diagonal.sh']
+          article.mv4.flex.flex-column.flex-row-l.pt0
+            aside
+              img.mw5(src=`/images/people/${p.image}`)
+            content.w-80-l.pa3-l.pt0-l.mt3.mt0-l
+              h4.mv0.f4 #{ p.name }
+              i.i.fw5 #{ p.title }
+              p #{ p.description }
+              .mt4
+                a.mr4.mr3-l.w2.h2.w1-l.h1-l.dib(target="_new" href=`https://www.linkedin.com/in/${p.linkedin}`)
+                  img(src="/images/social/linkedin-black.svg")
+
+                a.mr4.mr3-l.w2.h2.w1-l.h1-l.dib(target="_new" href=`https://www.twitter.com/in/${p.twitter}`)
+                  img(src="/images/social/twitter-black.svg")
+          hr
+
+

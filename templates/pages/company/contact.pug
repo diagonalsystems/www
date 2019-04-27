@@ -1,9 +1,12 @@
 extends /templates/layouts/default.pug
 
 block content
-  section.min-vh-20.bg-black.white
-    .container
-      h2 Contact
+  section.hero.bg-black.white.flex-column
+    .db.h4.flex.items-center.justify-center
+      h2 
+        a(href="/company/contact") 
+          span.white.fw2.sans-serif Contact
+
 
   section
     .container.lh-copy

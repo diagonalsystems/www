@@ -37,6 +37,9 @@ items:
         name: 'About'
         route: '/about'
       - 
+        name: 'Team'
+        route: '/team'
+      - 
         name: 'Careers'
         route: '/careers'
       - 

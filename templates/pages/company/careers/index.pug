@@ -1,8 +1,23 @@
 extends /templates/layouts/default.pug
 
 block content
-  section.min-vh-50.bg-black.white
-    .container 
-      h2 Careers
 
-  section.min-vh-50
+  section.hero.bg-black.white.flex-column
+    .db.h4.flex.items-center.justify-center
+      h2 
+        a(href="/company/careers") 
+          span.white.fw2.sans-serif Careers
+
+  section.min-vh-50.pv3
+    .container
+      h3.f3.fw3 Staff
+
+      p 
+        small.i No opening at the moment.
+
+      br
+
+      h3.f3.fw3 Associate
+
+      p 
+        small.i No opening at the moment.
