@@ -4,19 +4,19 @@
       .mb3
         label Name
         br
-        input.input-reset.br0.fw3.bw05.b--black.pa2.w-100.mv1(name='first_name', type='text', style='background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg=="); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;')
+        input.input-reset.br0.flex.flex-auto.fw3.pa2.bw05.b--moon-gray.ba.bg-white.mv2.w-100(name='first_name', type='text', style='background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg=="); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;')
       .mb3
-        label E-mail
+        label Email
         br
-        input.input-reset.br0.fw3.b--black.bw05.pa2.w-100.mv1(name='email', type='text')
+        input.input-reset.br0.flex.flex-auto.fw3.pa2.bw05.b--moon-gray.ba.bg-white.mv2.w-100(name='email', type='text')
       .mb3
         label Company
         br
-        input.input-reset.br0.fw3.bw05.b--black.pa2.w-100.mv1(name='company', type='text')
+        input.input-reset.br0.flex.flex-auto.fw3.pa2.bw05.b--moon-gray.ba.bg-white.mv2.w-100(name='company', type='text')
       .mb3
         label Message
         br
-        textarea.input-reset.br0.fw3.b--solid.b--black.bw05.pa2.w-100.mv1(style="resize: none; border-width: 0.1rem" name='message', type='text', rows='5')
+        textarea.input-reset.br0.flex.flex-auto.fw3.pa2.b--moon-gray.ba.bg-white.mv2.w-100.bw05(name='message', type='text', rows='5')
     input(type='hidden', name='_subject', value='Form Submission on diagonal.sh')
     input(type='text', name='_gotcha', style='display:none')
-    input.br0.hover-bg-red.pointer.bg-black.white.pv2.ph4(type='submit', value='Send')
+    input.button(type='submit', value='Send')

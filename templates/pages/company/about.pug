@@ -1,11 +1,15 @@
 extends /templates/layouts/default.pug
 
 block content
-  section.min-vh-20.bg-black.white
+  section.hero.bg-black.white.flex-column
+    .db.h4.flex.items-center.justify-center
+      h2 
+        a(href="/company/about") 
+          span.white.fw2.sans-serif About
+
+  section
     .container
-      article.lh-copy
-        h2 About
-        
+      article.lh-copy.mv4.pv2.blog-post
         p Diagonal is a boutique application security firm.
 
         p 
@@ -14,11 +18,8 @@ block content
         p 
           | We do this by emulating adversarial behaviour that challenge prevalent assumptions. We then help design, implement and deploy security knowledge and disciplines. 
 
-  section.pv1.bg-black.white
-    .container
-      article.pv3.lh-copy
 
-        h3.f3.fw2.mb4.mt1 Areas of Focus
+        h3.f3.fw2.mb4.mt4 Areas of Focus
 
         p We specialize in researching, attacking and defending modern applications:
 
@@ -32,30 +33,36 @@ block content
 
         p We work with startups and small organizations because they are facing similar challenges securing their systems as their much larger counterparts, but must do so with less expertise and fewer resources.
 
-      article.pt1.pb5.lh-copy.mb3
+  section.bg-black.white
+    .container
+      article.pt1.pb5.lh-copy.mb3.blog-post
 
-        h3.f3.fw2.mb4 Founding Principles
+        h3.f3.fw2.mv4 Founding Principles
 
+        article
+          h4 Boutique.
 
-        h4 Boutique.
+          p We tailor our engagements to fit our clients needs.
 
-        p We tailor our engagements to fit our clients needs.
+        article
+          h4 Sustainable.
 
-        h4 Sustainable.
+          p We want to build a company that will still be here hundreds of years from now.
 
-        p We want to build a company that will still be here 50 and 60 years from now.
+        article
+          h4 Bootstrapped.
 
-        h4 Bootstrapped.
+          p Raise money by selling products &amp; services. Stay lean.
 
-        p Raise money by selling products &amp; services. Stay lean.
+        article
+          h4 Remote-first.
 
-        h4 Local AND remote-first.
+          p Our team is hired locally but works from home when they judge it best.
 
-        p Our team is hired locally but works from home when they judge it best.
+        article
+          h4 Continuous Learning.
 
-        h4 Continuous Learning.
-
-        p 20% of employee time spent on training and research.
+          p A significant percentage of employee time can be spent on training and research.
 
   section.pv1.bg-white.black.min-vh-60(style="background-image: url('/images/bg3.png'); background-repeat-x: repeat; background-position: center;")
     .container
