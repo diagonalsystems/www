@@ -23,12 +23,12 @@ items:
       - 
         name: 'Newsletter'
         route: '/newsletter'
-      - 
-        name: 'Industry News'
-        route: '/industry'
-      - 
-        name: 'Whitepapers'
-        route: '/whitepapers'
+      # - 
+      #   name: 'Industry News'
+      #   route: '/industry'
+      # - 
+      #   name: 'Whitepapers'
+      #   route: '/whitepapers'
   -
     name: 'Company'
     route: '/company' 
