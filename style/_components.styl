@@ -1,14 +1,16 @@
 a
-  color: $dark-blue
-  transition: 0.3s
+  color: $purple
+  transition-duration: 0.3s, 0.3s
+  transition-property: background-color, color
   text-decoration: none
 a:visited
-  color: $darker-blue
+  color: $purple
 a:hover:not(.white)
   background-color: $red
   color: $white
-  transition: 0.3s
-  
+  transition-duration: 0.3s, 0.3s
+  transition-property: background-color, color
+
 hr
   @extends .mv5, .w4
   border-color: #999
@@ -18,10 +20,12 @@ hr
   @extends .input-reset, .ba, .b--black, .br0
   @extends .bg-black, .white
   @extends .pv2, .ph3, .mv2
-  transition: 0.3s
+  transition-duration: 0.3s, 0.3s
+  transition-property: background-color, color
   &:hover
     @extends .pointer:hover, .hover-bg-red:hover
-    transition: 0.3s
+    transition-duration: 0.3s, 0.3s
+    transition-property: background-color, color
 
 ul.tags
   @extends .list, .pl0
@@ -30,9 +34,12 @@ ul.tags
     a
       @extends .pv1, .ph3, .pr2, .dib
       @extends .link, .bg-dark-gray, .white, .f7, .br1
+      transition-duration: 0.3s, 0.3s
+      transition-property: background-color, color
       &:hover
         background-color: $red
-        transition: 0.3s
+        transition-duration: 0.3s, 0.3s
+        transition-property: background-color, color
 
 code
   background-color: $black
