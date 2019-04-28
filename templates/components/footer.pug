@@ -10,13 +10,13 @@ footer.bg-black.white.flex.justify-center.pv3.pv4-ns
   .container.tc.flex.flex-column
     .flex.flex-row-ns.flex-column-m.flex-column
       .mr3
-        a.hover-bg-black.bsn.link.white.flex.items-center(href="/" itemscope itemtype="https://schema.org/Organization") 
+        a.hover-bg-none.bsn.link.white.flex.items-center(href="/" itemscope itemtype="https://schema.org/Organization") 
           img.h2(itemprop="logo" src="/images/diagonal_wordmark.svg")
         .w5.tl.mv4
           each site in social.sites
             span.mh2
               small.f7 
-                a.hover-bg-black.bsn.link.white.underline(href=site.url target="_new") 
+                a.hover-bg-none.bsn.link.white.underline(href=site.url target="_new") 
                   img.w1.h1(src=site.src alt=site.name)
       .flex.flex-row-ns.flex-column.tl.f7.w-100
         .w5-ns.ph2
