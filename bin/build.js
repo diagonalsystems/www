@@ -37,6 +37,7 @@ function build () {
     id: "https://diagonal.sh/",
     link: "https://diagonal.sh/",
     language: "en",
+    image: "https://diagonal.sh/images/logo/logomark-dark-572.png",
     favicon: "https://diagonal.sh/favicon.ico",
     copyright: "All rights reserved 2018, Diagonal Systems Inc.",
     generator: "Diagonal",
