@@ -42,8 +42,8 @@ function build () {
     copyright: "All rights reserved 2018, Diagonal Systems Inc.",
     generator: "Diagonal",
     feedLinks: {
-      json: "https://diagonal.sh/json",
-      atom: "https://diagonal.sh/atom"
+      atom: "https://diagonal.sh/atom",
+      rss: "https://diagonal.sh/rss"
     },
     author: {
       name: "Jonathan Dupré",
@@ -85,7 +85,6 @@ function build () {
 
   fs.writeFileSync('dist/feed', feed.rss2())
   fs.writeFileSync('dist/atom', feed.atom1())
-  fs.writeFileSync('dist/json', feed.json1())
 
   function generateRoute (route) {
     var dirName = path.dirname(route).split('/').slice(-1)[0]
