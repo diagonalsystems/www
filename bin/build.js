@@ -83,7 +83,7 @@ function build () {
   dynamicRoutes.forEach(generateRoute)
   pages.forEach(page => generatePage(page))
 
-  fs.writeFileSync('dist/feed', feed.rss2())
+  fs.writeFileSync('dist/rss', feed.rss2())
   fs.writeFileSync('dist/atom', feed.atom1())
 
   function generateRoute (route) {
