@@ -11,6 +11,7 @@ var changeCase = require('change-case')
 var matter = require('gray-matter')
 var marked = require('marked')
 var stylus = require('stylus')
+var { Feed } = require('feed')
 
 const DIR = generateDirectoryMap([
   'dist', 'templates/pages', 'style', 'public'
@@ -29,6 +30,26 @@ if (require.main === module) {
 
 function build () {
   console.log('Building...')
+
+  const feed = new Feed({
+    title: "Diagonal Feed",
+    description: "Application Security",
+    id: "https://diagonal.sh/",
+    link: "https://diagonal.sh/",
+    language: "en",
+    favicon: "https://diagonal.sh/favicon.ico",
+    copyright: "All rights reserved 2018, Diagonal Systems Inc.",
+    generator: "Diagonal",
+    feedLinks: {
+      json: "https://diagonal.sh/json",
+      atom: "https://diagonal.sh/atom"
+    },
+    author: {
+      name: "Jonathan Dupré",
+      email: "jonathan@diagonal.sh",
+      link: "https://diagonal.sh/company/team"
+    }
+  })
 
   recreateDist()
   copyAssets()
@@ -60,6 +81,10 @@ function build () {
 
   dynamicRoutes.forEach(generateRoute)
   pages.forEach(page => generatePage(page))
+
+  fs.writeFileSync('dist/feed', feed.rss2())
+  fs.writeFileSync('dist/atom', feed.atom1())
+  fs.writeFileSync('dist/json', feed.json1())
 
   function generateRoute (route) {
     var dirName = path.dirname(route).split('/').slice(-1)[0]
@@ -99,10 +124,22 @@ function build () {
 
       renderer.image = generateImageRenderingFn()
 
+      var content = marked(frontmatter.content, { renderer })
+
+      if (dirName === 'blog') {
+        feed.addItem(Object.assign({}, item, {
+          content,
+          updated: new Date(item.updated || item.date),
+          date: new Date(item.date),
+          description: item.blurb,
+          link: 'https://diagonal.sh/blog/' + item.slug
+        }))
+      }
+
       generatePage(route, dest, {
         post: {
           data,
-          content: marked(frontmatter.content, { renderer })
+          content
         }
       })
     })
