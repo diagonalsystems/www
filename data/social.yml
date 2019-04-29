@@ -11,3 +11,17 @@ sites:
     name: LinkedIn
     src: /images/social/linkedin.svg
     url: https://www.linkedin.com/company/diagonal-systems
+  -
+    name: Instagram
+    src: /images/social/instagram.svg
+    url: https://www.instagram.com/diagonalsystems
+  -
+    name: Facebook
+    src: /images/social/facebook.svg
+    url: https://www.facebook.com/diagonalsystems
+  -
+    name: RSS
+    src: /images/social/feed.svg
+    url: https://diagonal.sh/rss
+
+
