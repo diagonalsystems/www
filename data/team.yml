@@ -1,12 +1,38 @@
 # team 
 
-vacancies:
-  Staff:
-
-  Associates:
-
 people:
   Partners:
     - jonathan
   Fellows:
     - liam
+
+vacancies:
+  Associate:
+
+    Operations:
+      - Operator (Red Team)
+      - Web Engineer (Red Team)
+      - Coordinator (Red Team)
+
+    Intelligence:
+      - Operator (Intelligence)
+      - Analyst (Intelligence)
+
+  Staff:
+    Office:
+      - Administrative Assistant
+
+    Platform:
+      - Web Engineer (Platform)
+      - Security Researcher (Platform)
+      - System Administrator (Platform)
+
+    Media:
+      - Marketing Coordinator
+      #   - Run Ads
+      - Graphic Designer
+        # - Make Images 
+      - Videographer
+        # - Film & Post-Produce
+      - Writer
+      #   - Write content

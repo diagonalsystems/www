@@ -8,16 +8,37 @@ block content
         a.bsn(href="/company/careers") 
           span.white.fw2.sans-serif Careers
 
-  section.min-vh-50.pv3
+  section.min-vh-50.pv3.lh-copy.mb5
     .container
-      h3.f3.fw3 Staff
 
-      p 
-        small.i No opening at the moment.
+      p.mt4 See any position you are interesting in? 
+        |Let us know at  
+        a(href="mailto: careers@diagonal.sh") careers@diagonal.sh 
 
-      br
+      hr.mb3
 
-      h3.f3.fw3 Associate
+      h3.f2.fw3.mb3.mt0 Montréal
+      each organization, orgName in team.vacancies
+        - 
+          var empty = Object.keys(organization)
+            .map(key => organization[key])
+            .filter(x => x)
+            .length === 0
 
-      p 
-        small.i No opening at the moment.
+        section.flex.flex-column.mb2
+          h4.mt0.f3.fw3 #{ orgName }
+
+          if empty
+            p 
+              small.i No opening at the moment.
+          else
+            each team, teamName in organization
+              if team
+                div.mb4
+                  h5.f5.fw2.mt0 #{ teamName }
+
+                  .flex.flex-wrap
+                    each position in team
+                      a.w-100.w-40-l.mr3.mb3.bsn(href="#")
+                        article.pv3.ph2.ba.b--gray.flex.bg-black.white.hover-bg-red.flex.flex-column.justify-center.items-center
+                          h5.f6 #{ position }

@@ -32,14 +32,14 @@ function build () {
   console.log('Building...')
 
   const feed = new Feed({
-    title: "Diagonal Feed",
-    description: "Application Security",
+    title: "Diagonal",
+    description: "Application Security for Agile Teams.",
     id: "https://diagonal.sh/",
     link: "https://diagonal.sh/",
     language: "en",
     image: "https://diagonal.sh/images/logo/logomark-dark-572.png",
     favicon: "https://diagonal.sh/favicon.ico",
-    copyright: "All rights reserved 2018, Diagonal Systems Inc.",
+    copyright: "© 2018, Diagonal Systems Inc. All Rights Reserved.",
     generator: "Diagonal",
     feedLinks: {
       atom: "https://diagonal.sh/atom",
