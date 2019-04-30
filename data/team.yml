@@ -10,22 +10,22 @@ vacancies:
   Associate:
 
     Operations:
-      - Operator (Red Team)
-      - Web Engineer (Red Team)
-      - Coordinator (Red Team)
+      - Operator, Red Team
+      - Web Engineer, Red Team
+      - Coordinator, Red Team
 
     Intelligence:
-      - Operator (Intelligence)
-      - Analyst (Intelligence)
+      - Intelligence Operator
+      - Intelligence Analyst
 
   Staff:
     Office:
       - Administrative Assistant
 
     Platform:
-      - Web Engineer (Platform)
-      - Security Researcher (Platform)
-      - System Administrator (Platform)
+      - Web Engineer, Platform
+      - Security Researcher, Platform
+      - System Administrator, Platform
 
     Media:
       - Marketing Coordinator
