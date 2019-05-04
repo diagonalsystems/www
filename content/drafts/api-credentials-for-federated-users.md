@@ -7,6 +7,15 @@ tags:
   - SSO
 ---
 
+aws-login 
+
+> Sadly the CLI got overlooked again. It's weird enough you have to craft your own policy to enforce MFA from CLI, but does Amazon think no federated users need to use the CLI?
+
+obtain the SAML assertion from your IdP
+
+
+
+
 AssumeRoleWithWebIdentity
 
 Assuming that the identity provider validates the token, AWS returns the following information to you:
