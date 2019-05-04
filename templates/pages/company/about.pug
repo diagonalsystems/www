@@ -1,11 +1,18 @@
 extends /templates/layouts/default.pug
 
-block content
-  section.hero.bg-black.white.flex-column
-    .db.h4.flex.items-center.justify-center
-      h2 
+block head
+  section.hero.hero-about.flex-column.bg-black
+    .db.h4.flex.items-center.justify-center.mt5
+      h2
         a.bsn(href="/company/about") 
           span.white.fw2.sans-serif About
+
+block content
+  //- section.hero.hero-about.bg-black.white.flex-column
+  //-   .db.h4.flex.items-center.justify-center
+  //-     h2 
+  //-       a.bsn(href="/company/about") 
+  //-         span.white.fw2.sans-serif About
 
   section
     .container
