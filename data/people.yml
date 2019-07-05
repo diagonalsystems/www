@@ -5,8 +5,20 @@ jonathan@diagonal.sh:
   description: 
   - |
     Jonathan is the founder and principal consultant at Diagonal. 
-  linkedin: jonathandupre
-    
+  linkedin: jonathandupre 
+  twitter: Jonathan_Dupre
+  www: https://www.jonathandupre.com
+
+katherine@diagonal.sh:
+  name: Katherine Belisle
+  image: katherine.jpg
+  title: Office Assistant
+  description: 
+  - |
+    Katherine is a communications and project management professional 
+    with an eye for graphic design. 
+  linkedin: katherine-belisle-ab8331150
+
 liam@diagonal.sh:
   name: Liam Stock Rabbat
   image: liam.jpg
