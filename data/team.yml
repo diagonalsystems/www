@@ -12,28 +12,28 @@ vacancies:
 
     Operations:
       - Operator, Red Team
-      - Web Engineer, Red Team
-      - Coordinator, Red Team
+      # - Web Engineer, Red Team
+      # - Coordinator, Red Team
 
-    Intelligence:
-      - Intelligence Operator
-      - Intelligence Analyst
+    # Intelligence:
+      # - Intelligence Operator
+      # - Intelligence Analyst
 
   Staff:
-    Office:
-      - Administrative Assistant
+    # Office:
+      # - Administrative Assistant
 
     Platform:
-      - Web Engineer, Platform
-      - Security Researcher, Platform
+      # - Web Engineer, Platform
+      # - Security Researcher, Platform
       - System Administrator, Platform
 
-    Media:
-      - Marketing Coordinator
+    # Media:
+      # - Marketing Coordinator
       #   - Run Ads
-      - Graphic Designer
+      # - Graphic Designer
         # - Make Images 
-      - Videographer
+      # - Videographer
         # - Film & Post-Produce
-      - Writer
+      # - Writer
       #   - Write content
