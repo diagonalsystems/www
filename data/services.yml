@@ -1,11 +1,101 @@
--
-  name: 'Application Security Consulting'
-  path: '/services/consulting'
+consulting:
+  name: Application Security Consulting
+  path: /services/consulting
+  quote:
+    body: >-
+      The profoundest truth of war is that the issue of 
+      battle is usually decided in the minds of the opposing 
+      commanders, not in the bodies of their men.
+    author: B.H. Liddell Hart
+  services:
+    -
+      name: Security Program
+      description: >-
+        Until you can hire a full-time, dedicated CSO, we can 
+        function as your outsourced security team.
+        We will accompany you in building a solid security 
+        program that corresponds to your organization's 
+        specific threat model.
+    -
+      name: Training & Support
+      description: >-
+        Book us weeks at a time so we are available to answer 
+        your on-going questions, as you work on securing your 
+        on-premise and cloud IT assets.
+        We can take part of the workload off your CTO's 
+        shoulders and allow them to work on matters that 
+        are currently affecting the bottom line.
+        When it relates to information security, this includes 
+        system administration and development operations.
+    -
+      name: Education
+      description: >-
+        We will sit down with people in your organization and 
+        teach them best practices. We can prepare customized 
+        lessons that cover the missing parts in your team's 
+        security knowledge and know-how.
+        We will also give the participants privileged access 
+        to our internal knowledge-base. 
 
-- 
-  name: 'Adversarial Assessments'
-  path: '/services/assessments'
+assessments:
+  name: Adversarial Assessments
+  path: /services/assessments
+  quote: 
+    body: >-
+      If you know the enemy and know yourself, 
+      you need not fear the result of a hundred battles.
+    author: Sun Tzu, The Art of War
+  services:
+    -
+      name: Penetration Testing
+      description: >-
+        Two to three weeks analysis of your infrastructure, 
+        yielding a report of found vulnerabilities, possible 
+        vectors of attack and remediation suggestions. We 
+        can also help you implement the changes across your 
+        organization.
+    -
+      name: Red Team Testing
+      description: >-
+        We will run an on-going attack against your 
+        whole organization and exfiltrate data from wherever 
+        it is. This includes long-term monitoring, social 
+        engineering and physical intrusion.  
+    -
+      name: Adversarial Simulation
+      description: >-
+        Make sure your people are always ready for a difficult 
+        situation. We will determine together who your worst 
+        adversaries are and then create impromptu scenarios to 
+        surprise your IT team with. 
 
-- 
-  name: 'Custom Tool Development'
-  path: '/services/development'
+development:
+  name: Custom Development
+  path: /services/development
+  quote:
+    body: We shape our tools and thereafter our tools shape us.
+    author: Marshall McLuhan
+  services:
+    - 
+      name: Systems Tools
+      description: >-
+        We can write scripts that automate some of 
+        our work that's specific to your infrastructure.
+        We'll even run them for you regularly and send the
+        data wherever you need it.
+    - 
+      name: Cyber Range
+      description: >-
+        We will replicate a part of your infrastructure 
+        inside our cyber-range and create scenarios for
+        your team to solve, as they practice hacking a clone 
+        of their own project.
+    - 
+      name: Web Apps
+      description: >-
+        Our expertise is rooted in software developement. 
+        If needed, we can build a custom line-of-business web 
+        application to fulfill an internal need in your company,
+        such as monitoring, collecting data or defending endpoints.
+
+

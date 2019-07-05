@@ -1,12 +1,7 @@
 extends /templates/layouts/default.pug
 
 block content
-  section.bg-black.white.min-vh-50
-    .container.mb5
-      h2 Adversarial Assessments
-      
-      blockquote 
-        span If you know the enemy and know yourself, you need not fear the result of a hundred battles.
-      cite ― Sun Tzu, The Art of War
+  +quote_section(services.assessments)
+  +subservices(services.assessments)
 
   include /templates/components/contact-link-section.pug
