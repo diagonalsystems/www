@@ -7,7 +7,7 @@ a
   transition-property: background-color, color
   text-decoration: none
   @extends .red-underline
-  
+
 a:visited
   color: $black
 
@@ -24,7 +24,7 @@ hr
   @extends .mv5, .w4
   border-color: #999
   border-width: 0.5px
-    
+
 .button
   @extends .input-reset, .ba, .b--black, .br0
   @extends .bg-black, .white
@@ -36,6 +36,24 @@ hr
     transition-duration: 0.3s, 0.3s, 0.3s
     transition-property: background-color, color, border-color
 
+a.button
+  @extends .fw1
+  &:visited
+    color: white
+  &.bg-true-black
+    background-color: $true-black
+    &:hover
+      background-color: $red
+  &.bg-white
+    background-color: $white
+    color: $black
+    &:hover
+      color: $white
+      background-color: $red
+      
+a.b--true-black
+  border-color: $true-black
+  
 ul.tags
   @extends .list, .pl0
   li

@@ -1,4 +1,5 @@
 $black=#131313
+$true-black=#000
 
 $blue=#5178D1
 $dark-blue=#1D9CD1
@@ -12,6 +13,16 @@ $white=#fff
 
 :focus
   outline: 2px solid red
+  
+.bg-true-black, .hover-bg-true-black
+  background-color: $true-black
+  a, a:active, a:visited, a:hover
+    &.link
+      color: white
+      transition: none
+      
+.b--true-black
+  border-color: $true-black
 
 .bg-black, .hover-bg-black:hover
   background-color: $black

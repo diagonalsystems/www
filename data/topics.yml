@@ -1,25 +1,27 @@
 topics:
   blog:
-    - unix philosophy
-    - calm technology
-    - cloud operations
-    - security architecture
-    - open-source tools
+    - AWS
+    - APIs
+    - Application Security
+    - Cloud Security
+    - Compliance
+    - Infrastructure Review
+    - Node.js
+    - Penetration Testing
+    - Secure System Design
+    - Security Research
+    - Tool Development
+    - Unix Philosophy
+    - Vulnerability Assessment
   courses:
     - creative problem-solving
     - working with a development team
-    - interpreting debugging data
-    - version control methodology
     - standard unix tools 
-    - leveraging existing code
+    - living off the land
     - security mindset
     - narrowing down problems to find root causes
-    - deploying to a cloud environment
-    - big-O analysis
     - modelling systems
     - invariant-based reasoning
-    - state-machines
-    - reasoning about the correctness of distributed algorithms
     - inquiry learning and metacognition
   thinking:
     - analysing
@@ -28,4 +30,4 @@ topics:
     - inferring
     - conjecturing
     - justifying
-    - categorising 
+    - categorising

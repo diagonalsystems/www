@@ -3,6 +3,10 @@
   src: /images/logos/mcgill.svg
   url: https://www.mcgill.ca/dobson
 -
+  name: Bell Media
+  src: /images/logos/bell.svg
+  url: https://www.bellmedia.ca/
+-
   name: Bouclair
   src: /images/logos/bouclair.svg
   url: https://www.bouclair.com
@@ -18,7 +22,3 @@
   name: Campsite
   src: /images/logos/campsite.svg
   url: https://www.campsiteproject.com
--
-  name: Newad Media
-  src: /images/logos/newad.svg
-  url: https://www.newad.com
