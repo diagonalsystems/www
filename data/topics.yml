@@ -3,16 +3,25 @@ topics:
     - AWS
     - APIs
     - Application Security
+    - Code Scanning
+    - Continuous Integration/Continuous Development
     - Cloud Security
     - Compliance
+    - Data Protection Laws
+    - Data Encryption
+    - Identity Access Management
     - Infrastructure Review
-    - Node.js
+    - Firewalls
+    - Key Management
+    - Network Security
     - Penetration Testing
+    - Policies and Procedures
     - Secure System Design
     - Security Research
     - Tool Development
-    - Unix Philosophy
-    - Vulnerability Assessment
+    - Vulnerability Management
+    - WAF
+    - Web Application Architecture
   courses:
     - creative problem-solving
     - working with a development team
