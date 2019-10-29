@@ -1,4 +1,12 @@
 extends /templates/layouts/default.pug
 block content 
-  section
+  section.bg-black.white
+    .container.mb3.tc
+      h2 Company
+
+  section.black.pv3.h-100.flex.flex-auto.flex-column.items-center
     .container
+      .flex.h-100.flex-column.flex-auto
+        each item in company
+          a.tc.hover-bg-red.fw2.no-underline.pointer.bg-black.white.mv1.pv4.ph4.flex.flex-auto.justify-center.items-center(href=item.path)
+            span.white.fw2.f4-ns.f3-l #{ item.name }

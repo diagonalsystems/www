@@ -2,16 +2,16 @@ items:
   -
     name: 'Services'
     route: '/services'
-    subitems:
-      - 
-        name: 'Application Security Consulting'
-        route: '/consulting'
-      - 
-        name: 'Adversarial Assessments'
-        route: '/assessments'
-      - 
-        name: 'Custom Tool Development'
-        route: '/development'
+    # subitems:
+      # - 
+      #   name: 'Application Security Consulting'
+      #   route: '/consulting'
+      # - 
+      #   name: 'AWS Cloud Security Assessment'
+      #   route: '/cloud-security-assessments'
+      # - 
+      #   name: 'Custom Tool Development'
+      #   route: '/development'
   -
     name: 'Resources'
     route: '/resources' 

@@ -8,14 +8,15 @@ nav#navbar.absolute.w-100.flex.justify-center.pv2.white(role="navigation")
 
     ul.menu.list.dn.flex-ns.items-center.ma0.tr.f7-l.f7
       each item in navbar.items
-        li.pl4.tr.item
-          a.bsn.white.link(href=item.route active-class="light-blue" aria-haspopup=item.subitems)
-            | #{ item.name }
+        li.pl0.tr.item.flex
+          a.dib.pv3.ph3.bsn.white.link(href=item.route aria-haspopup=item.subitems)
+            | #{ item.name }
           ul.dropdown(aria-label="submenu")
-            each subitem in item.subitems
-              a.link(href=subitem.absolute ? subitem.route : item.route + subitem.route)
-                li.tl
-                  |#{ subitem.name }
+            if item.subitems
+              each subitem in item.subitems
+                a.link(href=subitem.absolute ? subitem.route : item.route + subitem.route)
+                  li.tl.pa3
+                    |#{ subitem.name }
 
     label#navbar-button.flex.justify-center.items-center.dn-ns.w1.h1.pa1.mh2.tc.bg-black.br0.ba.bw05.b--white.white.pointer(
       for="navbar-toggle"

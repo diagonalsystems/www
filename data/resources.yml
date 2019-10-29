@@ -1,0 +1,7 @@
+blog:
+  name: Blog
+  path: /resources/blog
+
+newsletter:
+  name: Newsletter
+  path: /resources/newsletter

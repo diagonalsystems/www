@@ -1,0 +1,15 @@
+about:
+  name: About 
+  path: /company/about
+
+team:
+  name: Team 
+  path: /company/team
+
+careers:
+  name: Careers 
+  path: /company/careers
+
+contact:
+  name: Contact 
+  path: /company/contact
