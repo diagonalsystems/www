@@ -81,3 +81,20 @@ pre
     width: 100%
     overflow-x: scroll
     @extends .pa3
+
+ol.process-list > li
+  @extends .relative
+  @extends .bl, .bw2, .b--white
+  @extends .pl4, .pb4
+  max-width: 32rem
+
+ol.process-list > li:before
+  @extends .br-pill, .b--white, .bw2, .ba
+  @extends .absolute
+  background-color: $black
+  width: 0.5rem
+  height: 0.5rem
+  left: -0.6rem
+  top: 0.6rem
+  content: ''
+    
