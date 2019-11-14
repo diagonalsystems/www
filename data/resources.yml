@@ -1,6 +1,6 @@
 blog:
   name: Blog
-  path: /resources/blog
+  path: /blog
 
 newsletter:
   name: Newsletter
