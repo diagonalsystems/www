@@ -8,7 +8,7 @@ Programming-focused collaborators tend to gravitate towards technical tasks, whi
 
 ## Requirements
 
-- Be able to do useful programming from day one. The core of work in this position is writing code according to assignments. This means that, at minimum, you’ll need to be have practical experience in working on large codebases and complex problems in a C-like language. Javascript experience is ideal since that’s what we use for most of our code.
+- Be able to do useful programming from day one. The core of work in this position is writing code according to assignments. This means that, at minimum, you’ll need to be have practical experience in working on large codebases and complex problems in a C-like language. Typescript experience is ideal since that’s what we use for most of our code.
 - Have programming projects of significant scope to show off. These could be mods, indie games, game engines, professional games you worked on, or something else. These can’t be typical school projects or something you threw together with pals in a couple weeks or months. As a general minimum, a “significant project” is one that you worked on most days for at least a six months.
 - Be productive. You should be able to get a lot of stuff done in a given span of time. Even if your work quality is good, the pace of it is also important.
 - In your application, if possible please include links to where we can read some code you’re written. 
