@@ -12,19 +12,20 @@ jonathan@diagonal.sh:
 katherine@diagonal.sh:
   name: Katherine Belisle
   image: katherine.jpg
-  title: Office Manager
+  title: Program Advisor
   description: 
   - |
     Katherine is a communications and project management professional 
-    with an eye for graphic design. 
+    with an eye for graphic design. She advises on the development of new
+    projects 
   linkedin: katherine-belisle-ab8331150
 
-liam@diagonal.sh:
-  name: Liam Stock Rabbat
-  image: liam.jpg
-  title: Visiting Researcher
-  description: 
-  - |
-    Liam is a recent graduate in Crisis and Security Management (Msc.) 
-    from the University of Leiden.
-  linkedin: liamstockrabbat
+# liam@diagonal.sh:
+#   name: Liam Stock Rabbat
+#   image: liam.jpg
+#   title: Visiting Researcher
+#   description: 
+#   - |
+#     Liam is a recent graduate in Crisis and Security Management (Msc.) 
+#     from the University of Leiden.
+#   linkedin: liamstockrabbat

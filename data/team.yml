@@ -11,7 +11,7 @@ vacancies:
   Associate:
 
     Operations:
-      - Operator, Red Team (Remote)
+      # - Operator, Red Team (Remote)
       # - Web Engineer, Red Team
       # - Coordinator, Red Team
 
@@ -20,13 +20,13 @@ vacancies:
       # - Intelligence Analyst
 
   Staff:
-    # Office:
-      # - Administrative Assistant
+    Office:
+      - Administrative Assistant
 
     Platform:
-      - Web Engineer, Platform
+      # - Web Engineer, Platform
       # - Security Researcher, Platform
-      - System Administrator, Platform
+      # - System Administrator, Platform
 
     # Media:
       # - Marketing Coordinator
