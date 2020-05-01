@@ -10,7 +10,7 @@ people:
 vacancies:
   Associate:
 
-    Operations:
+    # Operations:
       # - Operator, Red Team (Remote)
       # - Web Engineer, Red Team
       # - Coordinator, Red Team
@@ -23,7 +23,7 @@ vacancies:
     Office:
       - Administrative Assistant
 
-    Platform:
+    # Platform:
       # - Web Engineer, Platform
       # - Security Researcher, Platform
       # - System Administrator, Platform
