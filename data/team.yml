@@ -8,7 +8,7 @@ people:
     - liam
 
 vacancies:
-  Associate:
+  # Associate:
 
     # Operations:
       # - Operator, Red Team (Remote)

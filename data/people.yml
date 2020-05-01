@@ -20,12 +20,12 @@ katherine@diagonal.sh:
     projects 
   linkedin: katherine-belisle-ab8331150
 
-# liam@diagonal.sh:
-#   name: Liam Stock Rabbat
-#   image: liam.jpg
-#   title: Visiting Researcher
-#   description: 
-#   - |
-#     Liam is a recent graduate in Crisis and Security Management (Msc.) 
-#     from the University of Leiden.
-#   linkedin: liamstockrabbat
+liam@diagonal.sh:
+  name: Liam Stock Rabbat
+  image: liam.jpg
+  title: Visiting Researcher
+  description: 
+  - |
+    Liam is a recent graduate in Crisis and Security Management (Msc.) 
+    from the University of Leiden.
+  linkedin: liamstockrabbat
