@@ -1,11 +1,11 @@
 jonathan@diagonal.sh:
   name: Jonathan Dupré
   image: jonathan.jpg
-  title: Security Engineer
+  title: Risk Engineer
   description: 
   - |
-    Jonathan is the founder and principal consultant at Diagonal. 
-  linkedin: jonathandupre 
+    Jonathan is the owner and principal consultant at Diagonal. 
+  linkedin: jonathandupre
   twitter: Jonathan_Dupre
   www: https://www.jonathandupre.com
 
@@ -20,12 +20,11 @@ katherine@diagonal.sh:
     projects 
   linkedin: katherine-belisle-ab8331150
 
-liam@diagonal.sh:
-  name: Liam Stock Rabbat
-  image: liam.jpg
-  title: Visiting Researcher
-  description: 
-  - |
-    Liam is a recent graduate in Crisis and Security Management (Msc.) 
-    from the University of Leiden.
-  linkedin: liamstockrabbat
+# office@diagonal.sh:
+#   name: 
+#   image: x.jpg
+#   title: Administrative Assistant
+#   description: 
+#   - |
+#     x
+#   linkedin: x

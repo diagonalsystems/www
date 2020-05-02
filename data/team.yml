@@ -8,25 +8,27 @@ people:
     - liam
 
 vacancies:
-  # Associate:
+  Associate:
 
     # Operations:
-      # - Operator, Red Team (Remote)
-      # - Web Engineer, Red Team
-      # - Coordinator, Red Team
-
-    # Intelligence:
-      # - Intelligence Operator
-      # - Intelligence Analyst
+      # - Project Coordinator
 
   Staff:
+
     Office:
       - Administrative Assistant
 
     # Platform:
-      # - Web Engineer, Platform
-      # - Security Researcher, Platform
+    #   - Account Manager
+    #   - Communications Specialist
+    #   - Typescript Developer
+    #   - Platform Engineer
+
+    # Platform:
+      # - UI Designer, Platform
+      # - Typescript Developer, Platform
       # - System Administrator, Platform
+      # - Security Engineer, Platform
 
     # Media:
       # - Marketing Coordinator
