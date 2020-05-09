@@ -4,13 +4,13 @@ people:
   Staff:
     - jonathan
     - katherine
-  Fellows:
-    - liam
+  # Fellows:
+    # - liam
 
 vacancies:
   Associate:
 
-    # Operations:
+    Operations:
       # - Project Coordinator
 
   Staff:
