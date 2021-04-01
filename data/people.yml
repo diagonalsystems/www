@@ -1,7 +1,7 @@
 jonathan@diagonal.sh:
   name: Jonathan Dupré
   image: jonathan.jpg
-  title: Risk Engineer
+  title: Security Consultant
   description: 
   - |
     Jonathan is the owner and principal consultant at Diagonal. 
@@ -17,14 +17,5 @@ katherine@diagonal.sh:
   - |
     Katherine is a communications and project management professional 
     with an eye for graphic design. She advises on the development of new
-    projects 
+    projects.
   linkedin: katherine-belisle-ab8331150
-
-marielinh@diagonal.sh:
-  name: Marie-Linh Gastel
-  image: marielinh.jpg
-  title: Administrative Assistant
-  description: 
-  - |
-    
-  linkedin: marie-linh-gastel

@@ -4,9 +4,6 @@ people:
   Staff:
     - jonathan
     - katherine
-    - marielinh
-  # Fellows:
-    # - liam
 
 vacancies:
   Associate:
@@ -17,26 +14,4 @@ vacancies:
   Staff:
 
     Office:
-      - Administrative Assistant
-
-    # Platform:
-    #   - Account Manager
-    #   - Communications Specialist
-    #   - Typescript Developer
-    #   - Platform Engineer
-
-    # Platform:
-      # - UI Designer, Platform
-      # - Typescript Developer, Platform
-      # - System Administrator, Platform
-      # - Security Engineer, Platform
-
-    # Media:
-      # - Marketing Coordinator
-      #   - Run Ads
-      # - Graphic Designer
-        # - Make Images 
-      # - Videographer
-        # - Film & Post-Produce
-      # - Writer
-      #   - Write content
+      # - Administrative Assistant3

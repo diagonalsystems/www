@@ -2,16 +2,6 @@ items:
   -
     name: 'Services'
     route: '/services'
-    # subitems:
-      # - 
-      #   name: 'Application Security Consulting'
-      #   route: '/consulting'
-      # - 
-      #   name: 'AWS Cloud Security Assessment'
-      #   route: '/cloud-security-assessments'
-      # - 
-      #   name: 'Custom Tool Development'
-      #   route: '/development'
   -
     name: 'Resources'
     route: '/resources' 
@@ -23,12 +13,6 @@ items:
       - 
         name: 'Newsletter'
         route: '/newsletter'
-      # - 
-      #   name: 'Industry News'
-      #   route: '/industry'
-      # - 
-      #   name: 'Whitepapers'
-      #   route: '/whitepapers'
   -
     name: 'Company'
     route: '/company' 
@@ -39,9 +23,6 @@ items:
       - 
         name: 'Team'
         route: '/team'
-      - 
-        name: 'Careers'
-        route: '/careers'
       - 
         name: 'Contact'
         route: '/contact'
