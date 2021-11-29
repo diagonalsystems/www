@@ -1,53 +1,7 @@
-extends /templates/layouts/default.pug
+extends /templates/layouts/layout.pug
 
-block head
-  section.min-vh-100.home-hero.bg-black.white.flex.items-center.justify-center.ph3.flex-column
-
-    .container.mt6.tc.flex-column.flex.justify-center.items-center
-      h2.lh-title.f2.f1-ns.mt0.fw2
-        | Your Technology Risk Task Force
-        br
-      h4.f5.f3-ns.fw1.lh-copy.mw6
-        | Make your startup measurably better at cybersecurity
-      br
-      a.ph4.button.bsn.dib.f3.bg-white.black.ba.b--true-black.bw1(href="/company/contact") 
-        | Get a quote
-
-  section.bg-white.flex.flex-column.items-center.tc.pv5.ph2
-
-    .container.flex.flex-column.justify-center.items-center.tl
-
-      blockquote
-        span
-          |Set aside your peaceful ways,
-          | and prepare for war.
-          | Melt down your plowshares,
-          | and take up your swords.
-          | We will see the flesh laid low, 
-          | the bodies fall.
-          | The Most High that none may know
-          | watches us all.
-      cite ― The Sword, "Hawks and Serpents"
-
-  section.flex.flex-column.items-center.tc.pv5.ph2.min-vh-50(style="background-image: url('images/bg2.png'); background-position-y: center;  background-position-x: center;  background-repeat-x: repeat;")
-
-    .container.flex.flex-column.justify-center.items-center.tl
-
-      blockquote
-        span
-      cite
-
-  section.bg-white.black.flex.flex-column.items-center.tc
-
-    h3.mt5.f2-ns.f3.fw2.mb0
-      | Our clients &amp; partners
-
-    .flex.justify-center.ph3.pv4
-
-      .flex.flex-column.items-center
-        
-        ul.list.pl0.mv4-ns.flex.items-center.justify-center.flex-wrap
-          each logo in logos
-            li.w4-ns.w-100.ph1-ns.ma3.items-center.justify-center.flex
-              a.hover-bg-none.bsn(href=logo.url target="_new")
-                img.w4(src=logo.src)
+block body
+  section.min-vh-100.bg-black.white.flex.flex-column.items-center.justify-center
+    .container.tc.flex.flex-column.justify-center.items-center
+      a.bsn.hover-bg-none.white.flex.items-center(href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x68;&#x65;&#x6c;&#x6c;&#x6f;&#x40;&#x64;&#x69;&#x61;&#x67;&#x6f;&#x6e;&#x61;&#x6c;&#x2e;&#x73;&#x68;")
+        img.h3(src="/images/diagonal_wordmark.svg")
